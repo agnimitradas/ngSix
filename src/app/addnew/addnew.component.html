@@ -1,0 +1,22 @@
+<div class="container">
+  Title: <input type="text" name="title" class="form-control" style="width: 40%; margin: 10px; border-radius: 0"
+    placeholder="Title" [(ngModel)]="title" #name="ngModel" required>
+
+  <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+    <div *ngIf="name.errors.required">
+      Title is required.
+    </div>
+  </div>
+
+  Author: <input type="text" name="author" class="form-control" style="width: 40%; margin: 10px; border-radius: 0"
+    placeholder="Author" [(ngModel)]="author" #authorName="ngModel" required>
+
+    <div *ngIf="authorName.invalid && (authorName.dirty || authorName.touched)" class="alert alert-danger">
+      <div *ngIf="authorName.errors.required">
+        Author Name is required.
+      </div>
+    </div>
+
+  <button class="btn btn-success" style="width: 100px; border-radius: 0" (click)="addNew()" [disabled]="name.invalid || authorName.invalid"> Add </button>
+
+</div>

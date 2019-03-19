@@ -1,0 +1,59 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "title": "json-server",
+      "author": "typicode",
+      "id": 6
+    },
+    {
+      "title": "test",
+      "author": "asdasd",
+      "id": 7
+    },
+    {
+      "title": "HI ",
+      "author": "Agni",
+      "id": 8
+    },
+    {
+      "title": "testing",
+      "author": "Agni",
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "title": "ww",
+      "author": "fff",
+      "id": 11
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
